@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "289329864285",
+    "firebase_url": "https://puzzle-a3ea1.firebaseio.com",
+    "project_id": "puzzle-a3ea1",
+    "storage_bucket": "puzzle-a3ea1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289329864285:android:a2eacfedec1b85ef",
+        "android_client_info": {
+          "package_name": "com.nstudio.puzzleblockfreesimple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289329864285-vf3qk93mtndcee27dp8kfgv4va7ivtp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nstudio.myapplication",
+            "certificate_hash": "1ef0b569980d15515d834a27252a91b73f0bbaf3"
+          }
+        },
+        {
+          "client_id": "289329864285-ktsidlds4jvua96iq8varo2r154890dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCArPo_nFlJh1YwHF8YFCUQMSbpYbwlog0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289329864285-ktsidlds4jvua96iq8varo2r154890dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

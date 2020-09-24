@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFFDB"
+    tools:context=".MainActivity">
+
+    <com.ictintern.app.library.HighScoreView
+        android:layout_above="@id/play"
+        android:id="@+id/hv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+    </com.ictintern.app.library.HighScoreView>
+    <com.ictintern.app.library.HelperButton
+        android:layout_centerInParent="true"
+        android:onClick="onPlayClick"
+        android:id="@+id/play"
+        app:radius="20"
+        app:style="play"
+        app:backgroundcolor="#F3925C"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+    <View
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/play"
+        android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <com.ictintern.app.library.HelperButton
+        android:layout_toLeftOf="@id/center"
+        android:onClick="onShareClick"
+        android:id="@+id/share"
+        android:layout_below="@id/play"
+        app:radius="20"
+        app:style="share"
+        app:backgroundcolor="#2C9C31"
+        android:layout_width="100dp"
+        android:layout_height="70dp" />
+    <com.ictintern.app.library.HelperButton
+        android:layout_toRightOf="@id/center"
+        android:layout_below="@id/center"
+        android:onClick="onRateClick"
+        android:id="@+id/rate"
+        android:layout_above="@id/rate"
+        android:layout_centerInParent="true"
+        app:radius="20"
+        app:style="rate"
+        app:backgroundcolor="#E91E63"
+        android:layout_width="100dp"
+        android:layout_height="70dp" />
+
+</RelativeLayout>

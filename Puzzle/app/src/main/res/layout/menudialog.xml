@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout1">
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:textColor="#4879DA"
+                android:gravity="center"
+                android:textSize="@dimen/dp45"
+                android:text="MENU"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_below="@id/relativelayout1"
+            android:layout_margin="@dimen/dp20"
+            android:id="@+id/rl_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_continue"
+                android:layout_margin="@dimen/dp10"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/curved_plays"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100">
+
+                <ImageView
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_play"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_replay"
+            android:layout_margin="@dimen/dp10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rl_score"
+            android:background="@drawable/curved_play"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_replay"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/rl_score"
+            android:layout_toRightOf="@id/rl_replay"
+            android:id="@+id/rl_rate"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/curved_rate"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_rate"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_below="@id/rl_score"
+            android:layout_toLeftOf="@id/rl_replay"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/curved_share"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_share"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

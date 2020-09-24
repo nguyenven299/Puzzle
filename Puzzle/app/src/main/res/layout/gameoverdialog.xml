@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout1">
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:textSize="@dimen/dp45"
+                android:text="GAME OVER"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_below="@id/relativelayout1"
+            android:layout_margin="@dimen/dp20"
+            android:id="@+id/rl_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:layout_margin="@dimen/dp10"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tv_tthighscore"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/dp20"
+                android:text="High Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:layout_below="@id/tv_tthighscore"
+                android:textColor="#FF9800"
+                android:id="@+id/tv_highscore"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/dp20"
+                android:text="1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/tv_ttyourscore"
+                android:layout_margin="@dimen/dp10"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_highscore"
+                android:textSize="@dimen/dp20"
+                android:text="Your Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.nstudio.puzzleblockfreesimple.Utils.GameOverTextView
+                android:layout_below="@id/tv_ttyourscore"
+                android:textColor="#CF2EF0"
+                android:id="@+id/tv_yourscore"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/dp20"
+                android:text="1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_replay"
+            android:layout_margin="@dimen/dp10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rl_score"
+            android:background="@drawable/curved_play"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_replay"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/rl_score"
+            android:layout_toRightOf="@id/rl_replay"
+            android:id="@+id/rl_rate"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/curved_rate"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_rate"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_below="@id/rl_score"
+            android:layout_toLeftOf="@id/rl_replay"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/curved_share"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_share"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
